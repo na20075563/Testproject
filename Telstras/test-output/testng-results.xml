@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="105136" started-at="2020-07-22T07:06:49Z" finished-at="2020-07-22T07:08:35Z">
+  <suite name="Default suite" duration-ms="115825" started-at="2020-07-23T07:30:23Z" finished-at="2020-07-23T07:32:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="105136" started-at="2020-07-22T07:06:49Z" finished-at="2020-07-22T07:08:35Z">
+    <test name="Default test" duration-ms="115825" started-at="2020-07-23T07:30:23Z" finished-at="2020-07-23T07:32:18Z">
       <class name="com.qa.testcases.LoginpageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcases.LoginpageTest@14acaea5]" name="setup" is-config="true" duration-ms="22410" started-at="2020-07-22T12:36:50Z" finished-at="2020-07-22T12:37:12Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testcases.LoginpageTest@14acaea5]" name="setup" is-config="true" duration-ms="27034" started-at="2020-07-23T13:00:23Z" finished-at="2020-07-23T13:00:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.qa.testcases.LoginpageTest@14acaea5]" name="loginTest" duration-ms="80902" started-at="2020-07-22T12:37:12Z" finished-at="2020-07-22T12:38:33Z">
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:com.qa.testcases.LoginpageTest@14acaea5]" name="loginTest" duration-ms="5032" started-at="2020-07-23T13:00:50Z" finished-at="2020-07-23T13:00:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginpageTest@14acaea5]" name="tearDown" is-config="true" duration-ms="1793" started-at="2020-07-22T12:38:33Z" finished-at="2020-07-22T12:38:35Z">
+        <test-method status="PASS" signature="searchForProductTest()[pri:2, instance:com.qa.testcases.LoginpageTest@14acaea5]" name="searchForProductTest" duration-ms="16478" started-at="2020-07-23T13:00:55Z" finished-at="2020-07-23T13:01:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForProductTest -->
+        <test-method status="PASS" signature="addToCartTest()[pri:3, instance:com.qa.testcases.LoginpageTest@14acaea5]" name="addToCartTest" duration-ms="59359" started-at="2020-07-23T13:01:11Z" finished-at="2020-07-23T13:02:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method status="PASS" signature="logOutTest()[pri:4, instance:com.qa.testcases.LoginpageTest@14acaea5]" name="logOutTest" duration-ms="6312" started-at="2020-07-23T13:02:11Z" finished-at="2020-07-23T13:02:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginpageTest@14acaea5]" name="tearDown" is-config="true" duration-ms="1582" started-at="2020-07-23T13:02:17Z" finished-at="2020-07-23T13:02:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

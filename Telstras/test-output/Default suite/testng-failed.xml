@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.testcases.LoginpageTest">
         <methods>
-          <include name="loginTest"/>
+          <include name="logOutFromFlipkart"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>

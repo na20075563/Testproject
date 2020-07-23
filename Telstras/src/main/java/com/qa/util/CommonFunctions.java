@@ -17,8 +17,11 @@ public class CommonFunctions extends TestBase{
 	
     protected static String userName;
 	protected static String password;
+	protected static String productNameInSearchPage;
+	protected static String productCostInSearchPage;
 	String currentDir;
 	
+	//To switch to a new window of a web page
 	public void switchToNewWindow(){
 		// Store the current window handle
 		String winHandleBefore = driver.getWindowHandle();	
@@ -29,11 +32,13 @@ public class CommonFunctions extends TestBase{
 		}
 	}
 	
+	//To wait for element visibility on a web page
 	public void waitForElement(WebElement element){
 		 WebDriverWait wait = new WebDriverWait(driver,150);
          wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
+	//TO wait until page gets loaded
 	public void waitForPageLoaded() {
 		ExpectedCondition<Boolean> pageLoadCondition = new
                 ExpectedCondition<Boolean>() {
@@ -45,15 +50,16 @@ public class CommonFunctions extends TestBase{
         wait.until(pageLoadCondition);
     }
 	
+	
+	//To hover on a web element
 	public void hoverOnElement(WebElement element){
 		Actions action = new Actions(driver);
-		action.moveToElement(element).perform();
+		action.moveToElement(element).build().perform();
 	}
 	
+	//To highlight a web element
 	public void highlightElement(WebElement element){
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-        //use executeScript() method and pass the arguments 
-        //Here i pass values based on css style. Yellow background color with solid red color border. 
 		js.executeScript("arguments[0].setAttribute('style', 'border: 2px solid red;');", element);
 		try{
 		Thread.sleep(1000);
@@ -62,6 +68,7 @@ public class CommonFunctions extends TestBase{
  
 	}
 	
+	//To scroll web page to a particular web element
 	public void scrollToElement(WebElement element){
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -69,6 +76,8 @@ public class CommonFunctions extends TestBase{
         js.executeScript("arguments[0].scrollIntoView();", element);
 	}
 	
+	
+	//To click on a web element
 	public void safeClick(WebElement element){
 		waitForElement(element);
 		highlightElement(element);
@@ -81,6 +90,7 @@ public class CommonFunctions extends TestBase{
 		}
 	}
 	
+	//To type a particulat text in the textbox
 	public void safeSendKeys(WebElement element, String value){
 		waitForElement(element);
 		highlightElement(element);
@@ -93,6 +103,7 @@ public class CommonFunctions extends TestBase{
 		}
 	}
 	
+	//To get username and password from the excel sheet
 	public void getTestDataFromExcel(){
 		try
         {

@@ -28,12 +28,9 @@ public class LoginPage extends CommonFunctions {
 	
 	public void login(String un, String pwd){
 		waitForPageLoaded();
-		/*username.sendKeys(un);
-		password.sendKeys(pwd);*/
 		safeSendKeys(username,un);
 		safeSendKeys(password,pwd);
 		safeClick(loginBtn);
-		//loginBtn.click();
 		waitForPageLoaded();
 	}
 
